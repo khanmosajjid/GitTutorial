@@ -16,7 +16,7 @@ function Footer(){
                         <div class="col-lg-4 col-md-12">
                             <div class="footer_logo mb-3 animation" data-animation="fadeInUp" data-animation-delay="0.2s"> 
                                 <a href="index-dark-modern.html#home_section" class="page-scroll">
-                                    <span className="text-white">UB</span>
+                                    <span className="text-white">UniBerlin</span>
                                 </a> 
                             </div>
                             <div class="footer_desc">
