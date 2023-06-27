@@ -21,3 +21,26 @@ body
 {
     color: #fff;
 }
+.v_dark .nav-fixed, .v_dark header.active, .v_dark .navbar-nav .dropdown-menu, .v_dark .lng_dropdown .ddChild, .v_dark .spop, .v_light_dark .nav-fixed, .v_light_dark header.active, .v_light_dark .navbar-nav .dropdown-menu, .v_light_dark .lng_dropdown .ddChild, .v_light_dark .spop {
+    background-color: #262d4e;
+}
+header.nav-fixed {
+    height: 70px;
+    padding: 5px 0;
+}
+.nav-fixed, header.active, .spop {
+    background-color: #4241b8;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+header {
+    height: 110px;
+    padding: 25px 50px;
+    transition: all 0.4s ease 0s;
+}
+header {
+    padding: 25px 0;
+}
+header nav
+{
+    padding: 3px 0 0 0 !important;
+}

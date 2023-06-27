@@ -4,6 +4,10 @@ Template Name: Cryptocash – ICO, Cryptocurrency Website & ICO Landing Page HTM
 Version      : 1.6
 ===================================*/
 
+import jQuery from 'jquery';
+import $ from 'jquery';
+
+
 (function($) {
 	'use strict';
 	

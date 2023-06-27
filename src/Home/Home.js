@@ -3,10 +3,30 @@ import './Home.css';
 import { Accordion, Tabs } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import { Tab } from "bootstrap";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Home(){
 
-    
+    var settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1
+      };
+      var blogSlideSettings = {
+        dots: true,
+        arrows: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      };
+
+
+     
 
     return(
 
@@ -303,8 +323,8 @@ function Home(){
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="timeline owl-carousel small_space">
+                    <div class="col-md-12 timeline-side-wrap">
+                        <Slider className="timeline owl-carousel small_space" {...settings}>
                             <div class="item">
                                 <div class="timeline_box complete">
                                     <div class="timeline_inner">
@@ -314,61 +334,65 @@ function Home(){
                                     </div>
                                 </div>
                             </div>
+
                             <div class="item">
                                 <div class="timeline_box complete current">
                                     <div class="timeline_inner">
-                                        <div class="timeline_circle"></div>
-                                        <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">February 2018</h6>
-                                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Exchange Cryptocash to Bitcoin</p>
+                                    <div class="timeline_circle"></div>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">February 2018</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Exchange Cryptocash to Bitcoin</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="timeline_box">
+                                    <div class="timeline_inner">
+                                    <div class="timeline_circle"></div>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">March 2018</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BTCC mode of payment in Cryptocash </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="timeline_box">
                                     <div class="timeline_inner">
-                                        <div class="timeline_circle"></div>
-                                        <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">March 2018</h6>
-                                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BTCC mode of payment in Cryptocash </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="timeline_box">
-                                    <div class="timeline_inner">
-                                        <div class="timeline_circle"></div>
-                                        <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">June 2018</h6>
-                                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Send-Receive coin Cryptocash & mobile</p>
+                                    <div class="timeline_circle"></div>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">June 2018</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Send-Receive coin Cryptocash & mobile</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="timeline_box">
                                     <div class="roadmap_inner">
-                                        <div class="timeline_circle"></div>
-                                        <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">October 2018</h6>
-                                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Coin Marketcap, World Coin Index</p>
+                                    <div class="timeline_circle"></div>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">October 2018</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Coin Marketcap, World Coin Index</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="timeline_box">
                                     <div class="timeline_inner">
-                                        <div class="timeline_circle"></div>
-                                        <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">December 2018</h6>
-                                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Online & Trading ICO Token Sale</p>
+                                    <div class="timeline_circle"></div>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">December 2018</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Online & Trading ICO Token Sale</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="timeline_box">
                                     <div class="timeline_inner">
-                                        <div class="timeline_circle"></div>
-                                        <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">December 2018</h6>
-                                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Deposit Bitcoin from your account</p>
+                                    <div class="timeline_circle"></div>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">December 2018</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Deposit Bitcoin from your account</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Slider>
+
+                        
                     </div>
                 </div>
             </div>
@@ -1043,95 +1067,103 @@ function Home(){
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12 offset-lg-2">
-                    <div class="title_default_light title_border text-center">
-                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Latest News</h4>
-                    </div>
+                        <div class="title_default_light title_border text-center">
+                            <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Latest News</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="blog_slider owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                                    <div class="blog_img">
-                                        <a href="index-dark-modern.html#">
-                                            <img src="assets/images/blog_small_img1.jpg" alt="blog_small_img1" />
-                                        </a>
-                                    </div>
-                                    <div class="blog_content">
-                                        <div class="blog_text">
-                                            <h6 class="blog_title"><a href="index-dark-modern.html#">Bitcoin Price Slightly Recovers as Ripple Market Cap</a></h6>
-                                            <p>The crypto markets continued to build on April's gains this week, with alternative cryptocurrencies like nano, VeChain and bytecoin leading the way.</p>
-                                            <a href="index-dark-modern.html#" class="text-capitalize">Read More</a>
-                                        </div>
-                                        <ul class="list_none blog_meta">
-                                            <li><a href="index-dark-modern.html#"><i class="ion-android-time"></i> April 14, 2018</a></li>
-                                            <li><a href="index-dark-modern.html#"><i class="ion-android-chat"></i> 2 Comment</a></li>
-                                        </ul>
-                                    </div>
+
+                    <Slider className="blog_slider owl-carousel owl-theme" {...blogSlideSettings}>
+                        <div class="item">
+                            <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                                <div class="blog_img">
+                                    <a href="index-dark-modern.html#">
+                                        <img src="images/blog_small_img1.jpg" alt="blog_small_img1" />
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.4s">
-                                    <div class="blog_img">
-                                        <a href="index-dark-modern.html#">
-                                            <img src="assets/images/blog_small_img2.jpg" alt="blog_small_img2" />
-                                        </a>
+                                <div class="blog_content">
+                                    <div class="blog_text">
+                                        <h6 class="blog_title"><a href="index-dark-modern.html#">Bitcoin Price Slightly Recovers as Ripple Market Cap</a></h6>
+                                        <p>The crypto markets continued to build on April's gains this week, with alternative cryptocurrencies like nano, VeChain and bytecoin leading the way.</p>
+                                        <a href="index-dark-modern.html#" class="text-capitalize">Read More</a>
                                     </div>
-                                    <div class="blog_content">
-                                        <div class="blog_text">
-                                            <h6 class="blog_title"><a href="index-dark-modern.html#">The Year Cryptocurrencies Seized the Mainstream Spotlightp</a></h6>
-                                            <p>The crypto markets continued to build on April's gains this week, with alternative cryptocurrencies like nano, VeChain and bytecoin leading the way.</p>
-                                            <a href="index-dark-modern.html#" class="text-capitalize">Read More</a>
-                                        </div>
-                                        <ul class="list_none blog_meta">
-                                            <li><a href="index-dark-modern.html#"><i class="ion-android-time"></i> April 14, 2018</a></li>
-                                            <li><a href="index-dark-modern.html#"><i class="ion-android-chat"></i> 2 Comment</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.6s">
-                                    <div class="blog_img">
-                                        <a href="index-dark-modern.html#">
-                                            <img src="assets/images/blog_small_img3.jpg" alt="blog_small_img3" />
-                                        </a>
-                                    </div>
-                                    <div class="blog_content">
-                                        <div class="blog_text">
-                                            <h6 class="blog_title"><a href="index-dark-modern.html#">Bitcoin Facing Decisive Year in 2018, Says Legendary Investor</a></h6>
-                                            <p>The crypto markets continued to build on April's gains this week, with alternative cryptocurrencies like nano, VeChain and bytecoin leading the way.</p>
-                                            <a href="index-dark-modern.html#" class="text-capitalize">Read More</a>
-                                        </div>
-                                        <ul class="list_none blog_meta">
-                                            <li><a href="index-dark-modern.html#"><i class="ion-android-time"></i> April 14, 2018</a></li>
-                                            <li><a href="index-dark-modern.html#"><i class="ion-android-chat"></i> 2 Comment</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                                    <div class="blog_img">
-                                        <a href="index-dark-modern.html#">
-                                            <img src="assets/images/blog_small_img1.jpg" alt="blog_small_img1" />
-                                        </a>
-                                    </div>
-                                    <div class="blog_content">
-                                        <div class="blog_text">
-                                            <h6 class="blog_title"><a href="index-dark-modern.html#">Bitcoin Price Slightly Recovers as Ripple Market Cap</a></h6>
-                                            <p>The crypto markets continued to build on April's gains this week, with alternative cryptocurrencies like nano, VeChain and bytecoin leading the way.</p>
-                                            <a href="index-dark-modern.html#" class="text-capitalize">Read More</a>
-                                        </div>
-                                        <ul class="list_none blog_meta">
-                                            <li><a href="index-dark-modern.html#"><i class="ion-android-time"></i> April 14, 2018</a></li>
-                                            <li><a href="index-dark-modern.html#"><i class="ion-android-chat"></i> 2 Comment</a></li>
-                                        </ul>
-                                    </div>
+                                    <ul class="list_none blog_meta">
+                                        <li><a href="index-dark-modern.html#"><i class="fa fa-clock"></i> April 14, 2018</a></li>
+                                        <li><a href="index-dark-modern.html#"><i class="fa-solid fa-message"></i> 2 Comment</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="item">
+                            <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                                <div class="blog_img">
+                                    <a href="index-dark-modern.html#">
+                                        <img src="images/blog_small_img2.jpg" alt="blog_small_img2" />
+                                    </a>
+                                </div>
+                                <div class="blog_content">
+                                    <div class="blog_text">
+                                        <h6 class="blog_title"><a href="index-dark-modern.html#">The Year Cryptocurrencies Seized the Mainstream Spotlightp</a></h6>
+                                        <p>The crypto markets continued to build on April's gains this week, with alternative cryptocurrencies like nano, VeChain and bytecoin leading the way.</p>
+                                        <a href="index-dark-modern.html#" class="text-capitalize">Read More</a>
+                                    </div>
+                                    <ul class="list_none blog_meta">
+                                        <li><a href="index-dark-modern.html#"><i class="fa fa-clock"></i> April 14, 2018</a></li>
+                                        <li><a href="index-dark-modern.html#"><i class="fa-solid fa-message"></i> 2 Comment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                                <div class="blog_img">
+                                    <a href="index-dark-modern.html#">
+                                        <img src="images/blog_small_img3.jpg" alt="blog_small_img3" />
+                                    </a>
+                                </div>
+                                <div class="blog_content">
+                                    <div class="blog_text">
+                                        <h6 class="blog_title"><a href="index-dark-modern.html#">Bitcoin Facing Decisive Year in 2018, Says Legendary Investor</a></h6>
+                                        <p>The crypto markets continued to build on April's gains this week, with alternative cryptocurrencies like nano, VeChain and bytecoin leading the way.</p>
+                                        <a href="index-dark-modern.html#" class="text-capitalize">Read More</a>
+                                    </div>
+                                    <ul class="list_none blog_meta">
+                                        <li><a href="index-dark-modern.html#"><i class="fa fa-clock"></i> April 14, 2018</a></li>
+                                        <li><a href="index-dark-modern.html#"><i class="fa-solid fa-message"></i> 2 Comment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="blog_item animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                                <div class="blog_img">
+                                    <a href="index-dark-modern.html#">
+                                        <img src="images/blog_small_img1.jpg" alt="blog_small_img1" />
+                                    </a>
+                                </div>
+                                <div class="blog_content">
+                                    <div class="blog_text">
+                                        <h6 class="blog_title"><a href="index-dark-modern.html#">Bitcoin Price Slightly Recovers as Ripple Market Cap</a></h6>
+                                        <p>The crypto markets continued to build on April's gains this week, with alternative cryptocurrencies like nano, VeChain and bytecoin leading the way.</p>
+                                        <a href="index-dark-modern.html#" class="text-capitalize">Read More</a>
+                                    </div>
+                                    <ul class="list_none blog_meta">
+                                        <li><a href="index-dark-modern.html#"><i class="fa fa-clock"></i> April 14, 2018</a></li>
+                                        <li><a href="index-dark-modern.html#"><i class="fa-solid fa-message"></i> 2 Comment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </Slider>
+
+
+                        
                     </div>
                 </div>
             </div>

@@ -1,17 +1,30 @@
 
 import React, { useEffect } from "react";
 import "./header.css";
+import $ from 'jquery';
 
 
 function Header(){
-
   
+
+    $(window).on('scroll', function() {
+		var scroll = $(window).scrollTop();
+
+	    if (scroll >= 50) {
+	        $('header').addClass('nav-fixed');
+	    } else {
+	        $('header').removeClass('nav-fixed');
+	    }
+
+	});
+
+
     return (
 
         <>
 
-        <header class="site-header">
-            <nav class="navbar navbar-expand-md fixed-top">
+        <header class="site-header fixed-top">
+            <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><b>Leciel Coins</b></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
