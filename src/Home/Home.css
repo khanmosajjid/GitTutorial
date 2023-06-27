@@ -1563,7 +1563,7 @@ a:hover, header button:hover, .navbar-nav li button.active, .navbar-expand-lg .n
 .blog_slider .slick-dots
 {
 	margin-top: 20px;
-	position: unset;
+	position: unsetgit branch;
 }
 .blog_slider .slick-dots li
 {
