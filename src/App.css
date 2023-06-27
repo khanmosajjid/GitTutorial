@@ -1,3 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body
+{
+  font-family: 'Poppins';
+}
+
+.btn
+{
+    border-radius: 80px;
+    padding: 10px 25px !important;
+    height: auto;
+    font-size: 15px;
+    line-height: normal;
+    outline: none;
+    text-transform: uppercase;
+    z-index: 2;
+    transition: all 0.5s ease 0s;
+    border: none !important;
+    border-radius: 80px;
+    font-weight: 500;
+    box-shadow: none !important;
+}
+.btn:focus,
+.accordion-button:focus
+{
+  box-shadow: none !important;
+}
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.active:hover, 
+.btn:active:focus, 
+.btn:active:hover,
+.btn.active,
+.btn:active,
+.btn.focus:active, 
+.btn:focus,
+.btn.active:not(:disabled):not(.disabled), 
+.btn:active:not(:disabled):not(.disabled) {
+	background-image: -webkit-linear-gradient(left, #ff67cb 0%,#ffcc67 51%,#ff67cb);
+	background-image: linear-gradient(to right, #ff67cb 0%,#ffcc67 51%,#ff67cb);
+	box-shadow:none !important;
+	outline:none;
+}
+.btn-primary
+{
+  background-size: 200% auto;
+	background-image: -webkit-linear-gradient(left, #ff67cb 0%,#ffcc67 51%,#ff67cb);
+	background-image: linear-gradient(to right, #ff67cb 0%,#ffcc67 51%,#ff67cb);
+	border: 0;
+	color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+	background-position: right center; 
+}
+
+p,figure,ul,h1,h2,h3,h4,h5,h6
+{
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +99,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#banner_canvas
+{
+  height: 100%;
+  opacity: 0.4;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+.container, .container-fluid {
+  position: relative;
+  z-index: 5;
 }

@@ -1,0 +1,23 @@
+
+
+body
+{
+    background: #0c0e27;
+}
+
+.site-header .navbar-nav .nav-item
+{
+    padding: 0 10px;
+}
+.site-header .navbar-nav .nav-link
+{
+    padding: 15px 0;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+}
+.site-header .navbar-brand
+{
+    color: #fff;
+}

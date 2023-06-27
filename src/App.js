@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import React, { useEffect } from "react";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { Accordion } from 'bootstrap';
+import './App.css';
+import Header from "./header/header";
+import Home from "./Home/Home";
+import Footer from "./footer/footer";
+import jQuery from 'jquery';
+import $ from 'jquery';
+import './assets/js/modern_canvas';
+
+
+
+
+function App(){
+
+   return (
+    <>
+      <canvas id="banner_canvas"></canvas>
+      <Header />
+      <Home />
+      <Footer />
+    </>
   );
 }
 
