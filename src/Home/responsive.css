@@ -1,0 +1,193 @@
+
+
+@media (max-width:767px)
+{
+    section
+    {
+        padding: 40px 0;
+    }
+    
+    .banner_image_right img
+    {
+        width: 100%;
+    }
+    .section_banner
+    {
+        padding: 130px 0 0;
+    }
+    .section_banner .btn {
+        font-size: 12px;
+        padding: 10px 15px!important;
+    }
+    .section_banner .currency_icon
+    {
+        padding: 0;
+    }
+    .section_banner .currency_icon li,
+    .section_banner .currency_icon li i
+    {
+        margin-right: 5px;
+        font-size: 13px;
+    }
+    .section_banner .banner_image_right img,
+    #about img
+    {
+        width: 100%;
+    }
+    .title_default_light h4
+    {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    p
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #service .box_wrap
+    {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #service
+    {
+        padding-bottom: 0;
+    }
+    #about img
+    {
+        margin-bottom: 30px;
+    }
+    #about p
+    {
+        margin-bottom: 10px;
+    }
+    .section_token .pr_box
+    {
+        margin-top: 20px;
+    }
+    .tk_countdown
+    {
+        margin: 30px 0;
+        padding: 1rem;
+    }
+    .counter_box .tk_counter::after
+    {
+        right: -10px;
+        left: unset;
+    }
+    .tokenChart img
+    {
+        width: 100%;
+    }
+    .tokenChart ul
+    {
+        padding: 0;
+    }
+    .tokenChart .list_chart
+    {
+        margin-bottom: 50px;
+    }
+    #roadmap
+    {
+        padding-top: 0;
+    }
+    #roadmap .slick-slider
+    {
+        margin: 0;
+    }
+    #roadmap .slick-slider .slick-next,
+    #roadmap .slick-slider .slick-prev
+    {
+        top: unset;
+        bottom: -60px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    #roadmap .slick-slider .slick-next i
+    {
+        font-size: 36px;
+    } 
+    #roadmap .slick-slider .slick-next
+    {
+        left: 50px;
+    }
+    #roadmap .slick-slider .slick-prev
+    {
+        right: 50px;
+    }
+    .section_team .team_box_s3
+    {
+        margin-bottom: 30px;
+    }
+    .section_team .large_divider
+    {
+        height:40px
+    }
+    .faq-tabs-wrapper
+    {
+        margin-top: 0;
+    }
+    .faq-tabs-wrapper .nav-pills .nav-item button
+    {
+        font-size: 13px;
+    }
+    .faq-tabs-wrapper .tab_nav_s2 li.nav-item
+    {
+        padding: 0 5px;
+    }
+    .faq-tabs-wrapper .tab-content
+    {
+        margin-top: 20px;
+    }
+    .faq-tabs-wrapper .accordion-body
+    {
+        padding: 12px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .faq-tabs-wrapper .accordion-header button
+    {
+        padding: 12px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .banner_image_right
+    {
+        min-width: unset;
+        margin-top: 30px;
+    }
+    .blog_slider .item
+    {
+        padding: 0;
+    }
+    .blog_slider .blog_content p
+    {
+        height: auto;
+    }
+    .logo_border
+    {
+        height:auto
+    }
+    .client_logo 
+    {
+        padding-bottom: 0 !important;
+    }
+    .client_logo .row.small_space
+    {
+        margin-top: 0;
+    }
+    .logo_border {
+        height: auto;
+        padding: 20px 15px;
+    }
+    .logo_border:before 
+    {
+        display: none;
+    }
+    .contact_info
+    {
+        padding-left: 0;
+    }
+    
+}   

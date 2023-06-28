@@ -44,3 +44,40 @@ header nav
 {
     padding: 3px 0 0 0 !important;
 }
+
+@media (max-width:767px)
+{
+    header
+    {
+        padding: 10px 0;
+    }
+    header .navbar-toggler
+    {
+        box-shadow: none !important;
+        padding: 0;
+        color: #fff;
+    }
+    header .navbar-collapse {
+        background: #262d4e;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+    }
+    .site-header .navbar-nav
+    {
+        
+    }
+    .site-header .navbar-nav li
+    {
+        padding: 0 5px;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .site-header .navbar-nav .nav-link
+    {
+        font-size: 14px;
+        padding: 7px 0;
+    }
+}

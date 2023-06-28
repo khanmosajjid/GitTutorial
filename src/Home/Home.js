@@ -1,5 +1,6 @@
 
 import './Home.css';
+import './responsive.css';
 import { Accordion, Tabs } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import { Tab } from "bootstrap";
@@ -10,14 +11,38 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Home(){
 
-
-
     var settings = {
         dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+        ]
+
       };
       var blogSlideSettings = {
         dots: true,
@@ -25,7 +50,36 @@ function Home(){
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+        ]
+
+
+
       };
 
     
@@ -37,7 +91,7 @@ function Home(){
         <section id="home_section" class="section_banner bg_black_dark" data-z-index="1" data-parallax="scroll" data-image-src="assets/images/banner_bg2.png">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 col-sm-12 order-lg-first">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="banner_text_s2 text_md_center">
                             <h1 class="animation text-white" data-animation="fadeInUp" data-animation-delay="1.1s"><strong>Bitcoin</strong> is peer to peer innovative <strong>network</strong></h1>
                             <h5 class="animation presale_txt text-white" data-animation="fadeInUp" data-animation-delay="1.3s">Token Presale is <mark class="gradient_box">Live</mark></h5>
@@ -82,7 +136,7 @@ function Home(){
                             
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 order-first">
+                    <div class="col-lg-6 col-md-12 col-sm-12 ">
                         <div class="banner_image_right res_md_mb_50 res_xs_mb_30 animation" data-animation-delay="1.5s" data-animation="fadeInRight"> 
                             <img alt="banner_vector2" src="images/banner_img2.png" /> 
                         </div>
@@ -257,7 +311,7 @@ function Home(){
 
 
 
-        <section>
+        <section className='tokenChart'>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 res_md_mb_40">
@@ -1224,42 +1278,42 @@ function Home(){
                     </div>
                 </div>
                 <div class="row align-items-center text-center overflow_hide small_space">
-                    <div class="col-lg-3 col-md-4 col-6 logo_border">
+                    <div class="col-lg-3 col-md-4 col-12 logo_border">
                         <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation" data-animation="fadeInUp" data-animation-delay="0.3s"> 
                             <img src="images/client_logo_wt1.png" alt="client_logo_wt1" /> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 logo_border">
+                    <div class="col-lg-3 col-md-4 col-12 logo_border">
                         <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation" data-animation="fadeInUp" data-animation-delay="0.4s"> 
                             <img src="images/client_logo_wt2.png" alt="client_logo_wt2" /> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 logo_border">
+                    <div class="col-lg-3 col-md-4 col-12 logo_border">
                         <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation" data-animation="fadeInUp" data-animation-delay="0.5s"> 
                             <img src="images/client_logo_wt3.png" alt="client_logo_wt3" /> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 logo_border">
+                    <div class="col-lg-3 col-md-4 col-12 logo_border">
                         <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation" data-animation="fadeInUp" data-animation-delay="0.6s"> 
                             <img src="images/client_logo_wt4.png" alt="client_logo_wt4" /> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 logo_border">
+                    <div class="col-lg-3 col-md-4 col-12 logo_border">
                         <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation" data-animation="fadeInUp" data-animation-delay="0.7s"> 
                             <img src="images/client_logo_wt5.png" alt="client_logo_wt5" /> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 logo_border">
+                    <div class="col-lg-3 col-md-4 col-12 logo_border">
                         <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation" data-animation="fadeInUp" data-animation-delay="0.8s"> 
                             <img src="images/client_logo_wt6.png" alt="client_logo_wt6" /> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 logo_border">
+                    <div class="col-lg-3 col-md-4 col-12 logo_border">
                         <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation" data-animation="fadeInUp" data-animation-delay="0.8s"> 
                             <img src="images/client_logo_wt7.png" alt="client_logo_wt7" /> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 logo_border">
+                    <div class="col-lg-3 col-md-4 col-12 logo_border">
                         <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation" data-animation="fadeInUp" data-animation-delay="0.8s"> 
                             <img src="images/client_logo_wt8.png" alt="client_logo_wt8" /> 
                         </div>
