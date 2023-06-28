@@ -1447,6 +1447,7 @@ a:hover, header button:hover, .navbar-nav li button.active, .navbar-expand-lg .n
 .timeline-side-wrap .slick-next:before
 {
 	font-size: 42px;
+	opacity: 1 !important;
 }
 .blog_item {
     border: 1px solid rgba(0, 0, 0, 0);
