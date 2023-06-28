@@ -1,5 +1,41 @@
 
 
+
+@media (min-width:768px) and (max-width:1023px)
+{
+    .banner_image_right img
+    {
+        width: 100%;
+    }
+    .banner_image_right
+    {
+        min-width: unset;
+    }
+    .section_banner
+    {
+        padding: 100px 0;
+    }
+    .banner_text_s2 h1
+    {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .counter_box .tk_counter,
+    .tk_countdown_time
+    {
+        padding: 5px;
+    }
+    .banner_text_s2 h5
+    {
+        font-size: 14px;
+    }
+    .section_banner .btn {
+        font-size: 12px;
+        padding: 10px 15px!important;
+    }
+    
+}
+
 @media (max-width:767px)
 {
     section

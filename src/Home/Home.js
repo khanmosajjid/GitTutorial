@@ -91,7 +91,7 @@ function Home(){
         <section id="home_section" class="section_banner bg_black_dark" data-z-index="1" data-parallax="scroll" data-image-src="assets/images/banner_bg2.png">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="banner_text_s2 text_md_center">
                             <h1 class="animation text-white" data-animation="fadeInUp" data-animation-delay="1.1s"><strong>Bitcoin</strong> is peer to peer innovative <strong>network</strong></h1>
                             <h5 class="animation presale_txt text-white" data-animation="fadeInUp" data-animation-delay="1.3s">Token Presale is <mark class="gradient_box">Live</mark></h5>
@@ -136,7 +136,7 @@ function Home(){
                             
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 ">
                         <div class="banner_image_right res_md_mb_50 res_xs_mb_30 animation" data-animation-delay="1.5s" data-animation="fadeInRight"> 
                             <img alt="banner_vector2" src="images/banner_img2.png" /> 
                         </div>

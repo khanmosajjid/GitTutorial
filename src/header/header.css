@@ -45,6 +45,33 @@ header nav
     padding: 3px 0 0 0 !important;
 }
 
+@media (min-width:768px) and (max-width:1023px)
+{
+    header
+    {
+        padding: 10px 0;
+    }
+    #banner_canvas
+    {
+        width: 100%;
+    }
+    .site-header .navbar-brand img
+    {
+        width: 120px;
+    }
+    .site-header .navbar-nav .nav-link
+    {
+        font-size: 13px;
+    }
+    .site-header .btn {
+        padding: 8px 10px!important;
+        font-size: 12px;
+    }
+    .site-header .navbar-nav .nav-item {
+        padding: 0 5px;
+    }
+    
+}
 @media (max-width:767px)
 {
     header
@@ -67,7 +94,8 @@ header nav
     }
     .site-header .navbar-nav
     {
-        
+        flex-wrap: wrap;
+        flex-direction: unset;
     }
     .site-header .navbar-nav li
     {
@@ -80,4 +108,8 @@ header nav
         font-size: 14px;
         padding: 7px 0;
     }
+    .site-header .btn
+    {
+        width: 100%;
+    }   
 }
