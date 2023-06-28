@@ -12,7 +12,6 @@ import $ from 'jquery';
 import './assets/js/modern_canvas';
 
 
-
 function App(){
 
    return (

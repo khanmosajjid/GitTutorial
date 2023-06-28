@@ -1589,3 +1589,65 @@ a:hover, header button:hover, .navbar-nav li button.active, .navbar-expand-lg .n
 	background: none;
 	border: 3px solid #fff;
 }
+.section_banner .tk_counter_inner {
+    border: 0;
+}
+.tk_counter_inner {
+    margin: 0 auto;
+    max-width: 390px;
+    width: 100%;
+}.banner_token {
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+.transparent_bg {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.tk_countdown_time {
+    background-color: #5957cd;
+    border-radius: 9px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+.v_dark .tk_countdown_time {
+    background-color: #121833;
+}
+.box_shadow_none {
+    box-shadow: none !important;
+}
+.counter_box {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    width: 25%;
+}
+.counter_box .tk_counter {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 10px;
+}
+.counter_medium .counter_box .tk_counter {
+    font-weight: 500;
+}
+.counter_box .tk_text {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.counter_box .tk_counter::after {
+    content: ":";
+    font-size: 20px;
+    font-weight: 600;
+    left: 100%;
+    position: absolute;
+    top: 23px;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.counter_box:last-child .tk_counter::after
+{
+	display: none;
+}

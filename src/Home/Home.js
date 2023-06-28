@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+
 import './Home.css';
 import { Accordion, Tabs } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
@@ -7,7 +7,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 function Home(){
+
+
 
     var settings = {
         dots: false,
@@ -25,8 +28,7 @@ function Home(){
         slidesToScroll: 1
       };
 
-
-     
+    
 
     return(
 
@@ -39,13 +41,37 @@ function Home(){
                         <div class="banner_text_s2 text_md_center">
                             <h1 class="animation text-white" data-animation="fadeInUp" data-animation-delay="1.1s"><strong>Bitcoin</strong> is peer to peer innovative <strong>network</strong></h1>
                             <h5 class="animation presale_txt text-white" data-animation="fadeInUp" data-animation-delay="1.3s">Token Presale is <mark class="gradient_box">Live</mark></h5>
-                            <div class="transparent_bg tk_counter_inner m-lg-0 banner_token text-center px-0 animation" data-animation="fadeIn" data-animation-delay="1.4s">
+
+                            {/* <div class="transparent_bg tk_counter_inner m-lg-0 banner_token text-center px-0 animation" data-animation="fadeIn" data-animation-delay="1.4s">
                                 <div class="tk_countdown_time transparent_bg box_shadow_none border counter_medium animation" data-animation="fadeInUp" data-animation-delay="1.2s" data-time="2021/12/08 00:00:00"></div>
+                            </div> */}
+                            <div class="transparent_bg tk_counter_inner m-lg-0 banner_token text-center px-0 animation" data-animation="fadeIn" data-animation-delay="1.4s">
+                                <div className='tk_countdown_time transparent_bg box_shadow_none border counter_medium animation'>
+                                    <span class="counter_box">
+                                        <span class="tk_counter days">00 </span>
+                                        <span class="tk_text">Days</span>
+                                    </span>
+                                    <span class="counter_box">
+                                        <span class="tk_counter days">00 </span>
+                                        <span class="tk_text">Days</span>
+                                    </span>
+                                    <span class="counter_box">
+                                        <span class="tk_counter days">00 </span>
+                                        <span class="tk_text">Days</span>
+                                    </span>
+                                    <span class="counter_box">
+                                        <span class="tk_counter days">00 </span>
+                                        <span class="tk_text">Days</span>
+                                    </span>
+                                </div>
                             </div>
+                            
+
                             <div class="btn_group pt-2 pb-3 animation" data-animation="fadeInUp" data-animation-delay="1.4s"> 
                                 <a href="index-dark-modern.html#whitepaper" class="btn btn-primary btn-radius nav-link content-popup">Whitepaper <i class="fa fa-arrow-right"></i></a> 
                                 <a href="index-dark-modern.html#" class="btn btn-primary ms-3 btn-radius">Buy Token Now! <i class="fa fa-arrow-right"></i></a> 
                             </div>
+
                             <span class="text-white icon_title animation" data-animation="fadeInUp" data-animation-delay="1.4s">We accept :</span>
                             <ul class="list_none currency_icon">
                                 <li class="animation" data-animation="fadeInUp" data-animation-delay="1.5s"><i class="fa-brands fa-bitcoin"></i><span>Bitcoin</span></li>
@@ -175,7 +201,24 @@ function Home(){
                         <div class="token_sale res_md_mb_40 res_md_mt_40 res_sm_mb_30 res_sm_mt_30">
                             <div class="tk_countdown text-center animation token_countdown_bg" data-animation="fadeIn" data-animation-delay="1s" style={{backgroundImage:"url(images/token_countdown_bg.png)"}}>
                                 <div class="tk_counter_inner">
-                                    <div class="tk_countdown_time animation" data-animation="fadeInUp" data-animation-delay="1.2s" data-time="2021/12/08 00:00:00"></div>
+                                    <div class="tk_countdown_time animation" data-animation="fadeInUp" data-animation-delay="1.2s" data-time="2021/12/08 00:00:00">
+                                        <span class="counter_box">
+                                            <span class="tk_counter days">00 </span>
+                                            <span class="tk_text">Days</span>
+                                        </span>
+                                        <span class="counter_box">
+                                            <span class="tk_counter days">00 </span>
+                                            <span class="tk_text">Days</span>
+                                        </span>
+                                        <span class="counter_box">
+                                            <span class="tk_counter days">00 </span>
+                                            <span class="tk_text">Days</span>
+                                        </span>
+                                        <span class="counter_box">
+                                            <span class="tk_counter days">00 </span>
+                                            <span class="tk_text">Days</span>
+                                        </span>
+                                    </div>    
                                     <div class="progress animation" data-animation="fadeInUp" data-animation-delay="1.3s">
                                     <div class="progress-bar progress-bar-striped gradient" role="progressbar" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" style={{width:"46%"}}> 46% </div>
                                         <span class="progress_label bg-white" style={{left: "30%"}}> <strong> 46,000 BCC </strong></span>
