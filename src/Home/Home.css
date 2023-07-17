@@ -1653,6 +1653,340 @@ a:hover, header button:hover, .navbar-nav li button.active, .navbar-expand-lg .n
 	display: none;
 }
 
+.income-card
+{
+	border-radius: 15px;
+	overflow: hidden;
+	position: relative;
+	padding: 3px;
+}
+.income-card:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#ffcc67,#ff67cb);
+	z-index: -1;
+	animation: borderAnimate 2s infinite;
+	animation-play-state: running;
+}
 
+@keyframes borderAnimate
+{
+	0%
+	{
+		background-position: 100%;
+	}
+	50%
+	{
+		background-position: 100% 800px;
+	}
+	100%
+	{
+		background-position: 100%;
+	}
+}
 
+.income-card main
+{
+	border-radius: 10px;
+	padding: 12px;
+	position: relative;
+	background: rgba(18, 24, 51);
+}
+.income-card figure
+{
+	position: relative;
+	z-index: 1;
+}
+.income-card ul
+{
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 1;
+}
+.income-card ul li:nth-child(odd)
+{
+	padding-right: 5px;
+}
+.income-card ul li:nth-child(even)
+{
+	text-align: right;
+}
+.income-card ul li
+{
+	flex: 0 0 50%;
+	max-width: 50%;
+	font-size: 14px;
+	padding: 8px 0 0;
+	display: block;
+}
+.income-card ul li span {
+    text-align: left;
+    display: inline-block;
+    width: 70px;
+}
+.income-card img
+{
+	border-radius: 10px;
+}
+.staking-pool-slide .item
+{
+	padding: 0 5px;
+}
+.staking-pool-slide .slick-arrow
+{
+	left: 0;
+	right: 0;
+	bottom: -50px;
+	margin: 0 auto;
+	top: unset;
+}
+.staking-pool-slide .slick-prev
+{
+	right: 50px;
+}
+.staking-pool-slide .slick-next
+{
+	left: 50px;
+}
+.staking-pool-slide .slick-prev:before, 
+.staking-pool-slide .slick-next:before
+{
+	color: #ff67cb;
+	opacity: 1;
+	font-size: 48px;
+}
+#typesOfIncome
+{
+	padding-top: 0;
+}
+.direct-referral-img
+{
+	margin-top: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.direct-referral-img img
+{
+	width: 100%;
+	border-radius: 20px;
+	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+}
+.direct-referral-content
+{
+	margin-top: 30px;
+}
+.direct-referral-content p
+{
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.level-income-box main
+{
+	padding: 10px 0;
+	background: #ff67cb;
+	color: #fff;
+	text-align: center;
+	border-radius: 20px;
+}
+.level-income-box main p
+{
+	margin: 0;
+	color: #fff;
+}
+.level-income-box main h2
+{
+	margin: 0;
+	font-weight: bold;
+	font-size: 48px;
+}
+.level-income-directs
+{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+.level-income-directs li
+{
+	padding: 0 3px;
+	position: relative;
+}
+.level-income-directs li:before 
+{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background: #262d4e;
+    top: -37px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+	z-index: -1;
+}
+.level-income-directs li i
+{
+	width: 15px;
+	height: 15px;
+	display: block;
+	background: #ff67cb;
+	margin: 0 auto;
+	border-radius: 100%;
+}
+.level-income-directs li p
+{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+}
+.level-income-directs li p small
+{
+	display: block;
+	font-size: 9px;
+	line-height: 0;
+}
 
+.directs-3 li:nth-child(3):before 
+{
+    transform: rotate(-15deg);
+	right: 20px;
+}
+.directs-2 li:nth-child(2):before
+{
+    transform: rotate(-20deg);
+	right: 25px;
+}
+
+.directs-2 li:nth-child(1):before
+{
+	transform: rotate(15deg);
+	left: 12px;
+}
+.directs-2 li:nth-child(2):before
+{
+	transform: rotate(-15deg);
+	right: 12px;
+}
+.directs-3 li:nth-child(1):before
+{
+	transform: rotate(15deg);
+	left: 12px;
+}
+.directs-3 li:nth-child(3):before
+{
+	transform: rotate(-15deg);
+	right: 12px;
+}
+
+.directs-4 li:nth-child(1):before
+{
+	transform: rotate(20deg);
+	left: 18px;
+}
+.directs-4 li:nth-child(2):before
+{
+	transform: rotate(15deg);
+	left: 12px;
+}
+.directs-4 li:nth-child(3):before
+{
+	transform: rotate(-15deg);
+	right: 12px;
+}
+.directs-4 li:nth-child(4):before
+{
+	transform: rotate(-20deg);
+	right: 18px;
+}
+
+.directs-5 li:nth-child(1):before
+{
+	transform: rotate(25deg);
+	left: 22px;	
+}
+.directs-5 li:nth-child(2):before
+{
+	transform: rotate(20deg);
+	left: 18px;	
+}
+.directs-5 li:nth-child(4):before
+{
+	transform: rotate(-20deg);
+	right: 18px;	
+}
+.directs-5 li:nth-child(5):before
+{
+	transform: rotate(-25deg);
+	right: 22px;	
+}
+
+.directs-6 li:nth-child(1):before
+{
+	transform: rotate(30deg);
+	left: 26px;	
+}
+.directs-6 li:nth-child(2):before
+{
+	transform: rotate(25deg);
+	left: 22px;	
+}
+.directs-6 li:nth-child(3):before
+{
+	transform: rotate(20deg);
+	left: 18px;	
+}
+.directs-6 li:nth-child(4):before
+{
+	transform: rotate(-20deg);
+	right: 18px;	
+}
+.directs-6 li:nth-child(5):before
+{
+	transform: rotate(-25deg);
+	right: 22px;	
+}
+.directs-6 li:nth-child(6):before
+{
+	transform: rotate(-30deg);
+	right: 26px;	
+}
+
+.directs-7 li:nth-child(1):before {
+    transform: rotate(32deg);
+    left: 27px;
+    height: 42px;
+}
+.directs-7 li:nth-child(2):before {
+    transform: rotate(28deg);
+    left: 24px;
+    height: 42px;
+}
+.directs-7 li:nth-child(3):before {
+    transform: rotate(26deg);
+    left: 23px;
+    height: 42px;
+}
+.directs-7 li:nth-child(5):before {
+    transform: rotate(-26deg);
+    right: 23px;
+    height: 42px;
+}
+.directs-7 li:nth-child(6):before {
+    transform: rotate(-30deg);
+    right: 25px;
+    height: 42px;
+}
+.directs-7 li:nth-child(7):before {
+    transform: rotate(-32deg);
+    height: 42px;
+    left: -28px;
+}

@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 function Home(){
-
+    
     var settings = {
         dots: false,
         infinite: false,
@@ -77,10 +77,42 @@ function Home(){
                 }
               }
         ]
-
-
-
       };
+
+      var stakingPoolsSliderSettings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        arrows:true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+                }
+              }
+        ]
+
+    };
 
     
 
@@ -196,7 +228,7 @@ function Home(){
                         <div class="box_wrap text-center animation" data-animation="fadeInUp" data-animation-delay="1s">
                             <img src="images/service_icon6.png" alt="service_icon6"/>
                             <h4 className="text-white">Planning</h4>
-                            <p className="text-white">A cutting edge issue in traditional estate planning is Cryptocash. Cryptocash is a digital or virtual currency that uses cryptography for security</p>
+                            <p className="text-white">A cutting edge issue in traditional estate planning is Uniberlin. Uniberlin is a digital or virtual currency that uses cryptography for security</p>
                         </div>
                     </div>
                 </div>
@@ -209,13 +241,13 @@ function Home(){
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="text_md_center">
-                            <img class="animation" data-animation="zoomIn" data-animation-delay="0.2s" src="images/about_img2.png" alt="aboutimg2"/> 
+                        <img class="animation" data-animation="zoomIn" data-animation-delay="0.2s" src="images/about_img2.png" alt="aboutimg2"/> 
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
                         <div class="title_default_light title_border">
-                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">About The Cryptocash</h4>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Cryptocash is one of the most transformative technologies since the invention of the Internet. Cryptocash stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network. </p>
+                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">About The Uniberlin</h4>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Uniberlin is one of the most transformative technologies since the invention of the Internet. Uniberlin stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network. </p>
                         <p class="animation" data-animation="fadeInUp" data-animation-delay="0.8s">which empowers people to not be marginalized by governments and financial institutions. Bitcoin is freedom. </p>
                         </div>
                         <a href="https://www.youtube.com/watch?v=ZE2HxTmxfrI" class="btn btn-primary btn-radius video animation" data-animation="fadeInUp" data-animation-delay="1s">Let's Start <i class="ion-ios-arrow-thin-right"></i></a> 
@@ -224,6 +256,693 @@ function Home(){
             </div>
         </section>
 
+        
+
+        <section id='typesOfIncome' className='container-fluid'>
+            
+            <div className='row'>
+                <div class="col-lg-6 mx-auto">
+                    <div class="title_default_light title_border text-center">
+                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Staking Pools</h4>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Join the industry leaders to discuss where the markets are heading. We accept token payments. </p>
+                    </div>
+                </div>
+
+                <div className='w-100 mt-4'></div>
+
+                <div className='col-lg-12'>
+                    <Slider className='staking-pool-slide' {...stakingPoolsSliderSettings}>
+                        <div className='item'>
+                            <div className='income-card'>
+                                <main>
+                                    <figure>
+                                        <img src={require ("../assets/images/income-img.png")} alt="skating-box-img" class="w-100" />
+                                    </figure>
+                                    <ul className='list-unstyled'>
+                                        <li><b>Staking Amount Staking</b></li>
+                                        <li><span>100UB</span></li>
+                                        <li><b>Period</b></li>
+                                        <li><span>100 Days</span></li>
+                                        <li><b>ROI Per Day</b></li>
+                                        <li><span>0.22%</span></li>
+                                        <li><b>Total ROI</b></li>
+                                        <li><span>122%</span></li>
+                                    </ul>
+                                    <div className='text-center mt-2'>
+                                        <button className='btn btn-primary'>Coming Soon</button>
+                                    </div>
+                                </main>
+                            </div> 
+                        </div>
+
+                        <div className='item'>
+                            <div className='income-card'>
+                                <main>
+                                    <figure>
+                                        <img src={require ("../assets/images/income-img.png")} alt="skating-box-img" class="w-100" />
+                                    </figure>
+                                    <ul className='list-unstyled'>
+                                        <li><b>Staking Amount Staking</b></li>
+                                        <li><span>100UB</span></li>
+                                        <li><b>Period</b></li>
+                                        <li><span>100 Days</span></li>
+                                        <li><b>ROI Per Day</b></li>
+                                        <li><span>0.22%</span></li>
+                                        <li><b>Total ROI</b></li>
+                                        <li><span>122%</span></li>
+                                    </ul>
+                                    <div className='text-center mt-2'>
+                                        <button className='btn btn-primary'>Coming Soon</button>
+                                    </div>
+                                </main>
+                            </div> 
+                        </div>
+
+                        <div className='item'>
+                            <div className='income-card'>
+                                <main>
+                                    <figure>
+                                        <img src={require ("../assets/images/income-img.png")} alt="skating-box-img" class="w-100" />
+                                    </figure>
+                                    <ul className='list-unstyled'>
+                                        <li><b>Staking Amount Staking</b></li>
+                                        <li><span>100UB</span></li>
+                                        <li><b>Period</b></li>
+                                        <li><span>100 Days</span></li>
+                                        <li><b>ROI Per Day</b></li>
+                                        <li><span>0.22%</span></li>
+                                        <li><b>Total ROI</b></li>
+                                        <li><span>122%</span></li>
+                                    </ul>
+                                    <div className='text-center mt-2'>
+                                        <button className='btn btn-primary'>Coming Soon</button>
+                                    </div>
+                                </main>
+                            </div> 
+                        </div>
+
+                        <div className='item'>
+                            <div className='income-card'>
+                                <main>
+                                    <figure>
+                                        <img src={require ("../assets/images/income-img.png")} alt="skating-box-img" class="w-100" />
+                                    </figure>
+                                    <ul className='list-unstyled'>
+                                        <li><b>Staking Amount Staking</b></li>
+                                        <li><span>100UB</span></li>
+                                        <li><b>Period</b></li>
+                                        <li><span>100 Days</span></li>
+                                        <li><b>ROI Per Day</b></li>
+                                        <li><span>0.22%</span></li>
+                                        <li><b>Total ROI</b></li>
+                                        <li><span>122%</span></li>
+                                    </ul>
+                                    <div className='text-center mt-2'>
+                                        <button className='btn btn-primary'>Coming Soon</button>
+                                    </div>
+                                </main>
+                            </div> 
+                        </div>
+
+                        <div className='item'>
+                            <div className='income-card'>
+                                <main>
+                                    <figure>
+                                        <img src={require ("../assets/images/income-img.png")} alt="skating-box-img" class="w-100" />
+                                    </figure>
+                                    <ul className='list-unstyled'>
+                                        <li><b>Staking Amount Staking</b></li>
+                                        <li><span>100UB</span></li>
+                                        <li><b>Period</b></li>
+                                        <li><span>100 Days</span></li>
+                                        <li><b>ROI Per Day</b></li>
+                                        <li><span>0.22%</span></li>
+                                        <li><b>Total ROI</b></li>
+                                        <li><span>122%</span></li>
+                                    </ul>
+                                    <div className='text-center mt-2'>
+                                        <button className='btn btn-primary'>Coming Soon</button>
+                                    </div>
+                                </main>
+                            </div> 
+                        </div>
+
+                        <div className='item'>
+                            <div className='income-card'>
+                                <main>
+                                    <figure>
+                                        <img src={require ("../assets/images/income-img.png")} alt="skating-box-img" class="w-100" />
+                                    </figure>
+                                    <ul className='list-unstyled'>
+                                        <li><b>Staking Amount Staking</b></li>
+                                        <li><span>100UB</span></li>
+                                        <li><b>Period</b></li>
+                                        <li><span>100 Days</span></li>
+                                        <li><b>ROI Per Day</b></li>
+                                        <li><span>0.22%</span></li>
+                                        <li><b>Total ROI</b></li>
+                                        <li><span>122%</span></li>
+                                    </ul>
+                                    <div className='text-center mt-2'>
+                                        <button className='btn btn-primary'>Coming Soon</button>
+                                    </div>
+                                </main>
+                            </div> 
+                        </div>
+                     
+                               
+                    </Slider>
+                </div>
+
+            </div>
+            
+        </section>
+
+
+        <section id='directReferralIncome' class="section_token token_sale bg_light_dark" data-z-index="1" data-parallax="scroll" style={{backgroundImage:"url(images/token_bg.png)"}}>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-lg-12'>
+                        <div class="title_default_light title_border text-center">
+                            <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Direct Referral Income</h4>
+                            <p>
+                                Join the industry leaders to discuss where the markets are heading. We accept token payments.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='col-lg-8 direct-referral-img'>
+                        <figure>
+                            <img src={require ('../assets/images/income-img.png')} />
+                        </figure>
+                    </div>
+                    <div className='col-12'>
+                        <div className='direct-referral-content'>
+                            <p>Uniberlin is one of the most transformative technologies since the invention of the Internet. Uniberlin stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network.
+
+which empowers people to not be marginalized by governments and financial institutions. Bitcoin is freedom.</p>
+<p>Uniberlin is one of the most transformative technologies since the invention of the Internet. Uniberlin stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network.
+
+which empowers people to not be marginalized by governments and financial institutions. Bitcoin is freedom.</p>
+<p>Uniberlin is one of the most transformative technologies since the invention of the Internet. Uniberlin stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network.
+
+which empowers people to not be marginalized by governments and financial institutions. Bitcoin is freedom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id='levelIncome' className='container-fluid'>
+            <div className='row justify-content-center'>
+                <div class="col-lg-6 mx-auto">
+                    <div class="title_default_light title_border text-center">
+                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Level Income</h4>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Join the industry leaders to discuss where the markets are heading. We accept token payments. </p>
+                    </div>
+                </div>
+
+                <div className='w-100 mt-4'></div>
+                            
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 1</p>
+                            <h2>12%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 2</p>
+                            <h2>7%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-2'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 3</p>
+                            <h2>5%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-3'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    3
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 4</p>
+                            <h2>3%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-4'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    3
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    4
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 5</p>
+                            <h2>3%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-5'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    3
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    4
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    5
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 6</p>
+                            <h2>3%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-6'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    3
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    4
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    5
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                <p>
+                                    6
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 7</p>
+                            <h2>2%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-7'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    3
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    4
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    5
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    6
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    7
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 8</p>
+                            <h2>2%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-7'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    3
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    4
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    5
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    6
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    7
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 9</p>
+                            <h2>2%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-7'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    3
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    4
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    5
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    6
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    7
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='col-lg-2'>
+                    <div className='level-income-box'>
+                        <main>
+                            <p>Level 10</p>
+                            <h2>2%</h2>
+                        </main>
+                        <ul className='list-unstyled level-income-directs directs-7'>
+                            <li>
+                                <i></i>
+                                <p>
+                                    1
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    2
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    3
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    4
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    5
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    6
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    7
+                                    <small>Direct</small>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
 
 
         <section id="token" class="section_token token_sale bg_light_dark" data-z-index="1" data-parallax="scroll" style={{backgroundImage:"url(images/token_bg.png)"}}>
@@ -382,29 +1101,6 @@ function Home(){
 
 
 
-        {/* <section id="mobileapp" class="bg_light_dark" data-z-index="1" data-parallax="scroll" data-image-src="assets/images/app_bg.png">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-12 col-sm-12">
-                    <div class="title_default_light title_border text_md_center">
-                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Download Mobile App</h4>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">The use of crypto-currencies has become more widespread, and they are now increasingly accepted as a legitimate currency for transactions. Bitcoin is the first ever cryptocurrency and is used like other assets in exchange for goods and services.</p>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.6s">Send, receive, and exchange Bitcoin, Ethereum, & Bitcoin Cash instantly with anyone in the world. Securely buy and sell bitcoin alongside your already safely stored cryptocurrency. </p>
-                    </div>
-                    <div class="btn_group text_md_center animation" data-animation="fadeInUp" data-animation-delay="0.8s"> 
-                        <a href="index-dark-modern.html#" class="btn btn-primary btn-radius"><em class="fa-brands fa-android"></em> Google Store </a> 
-                        <a href="index-dark-modern.html#" class="btn btn-primary btn-radius ms-2"><em class="fa-brands fa-apple"></em> Apple Store</a> 
-                    </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12">
-                        <div class="res_md_mt_50 res_sm_mt_30 text-center animation" data-animation="fadeInRight" data-animation-delay="0.2s"> 
-                            <img src="images/mobile_app3.png" alt="mobile_app3"/> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-
 
 
         <section id="roadmap" class="small_pb">
@@ -437,7 +1133,7 @@ function Home(){
                                     <div class="timeline_inner">
                                     <div class="timeline_circle"></div>
                                     <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">February 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Exchange Cryptocash to Bitcoin</p>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Exchange Uniberlin to Bitcoin</p>
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +1143,7 @@ function Home(){
                                     <div class="timeline_inner">
                                     <div class="timeline_circle"></div>
                                     <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">March 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BTCC mode of payment in Cryptocash </p>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BTCC mode of payment in Uniberlin </p>
                                     </div>
                                 </div>
                             </div>
@@ -456,7 +1152,7 @@ function Home(){
                                     <div class="timeline_inner">
                                     <div class="timeline_circle"></div>
                                     <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">June 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Send-Receive coin Cryptocash & mobile</p>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Send-Receive coin Uniberlin & mobile</p>
                                     </div>
                                 </div>
                             </div>

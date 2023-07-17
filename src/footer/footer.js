@@ -20,13 +20,13 @@ function Footer(){
                                 </a> 
                             </div>
                             <div class="footer_desc">
-                                <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Cryptocash stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network.</p>
+                                <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Uniberlin stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 res_md_mt_30 res_sm_mt_20">
                             <h4 class="footer_title border_title animation" data-animation="fadeInUp" data-animation-delay="0.2s">Quick Links</h4>
                             <ul class="footer_link list_arrow">
-                                <li class="animation" data-animation="fadeInUp" data-animation-delay="0.2s"><a href="index-dark-modern.html#">Cryptocash ICO</a></li>
+                                <li class="animation" data-animation="fadeInUp" data-animation-delay="0.2s"><a href="index-dark-modern.html#">Uniberlin ICO</a></li>
                                 <li class="animation" data-animation="fadeInUp" data-animation-delay="0.3s"><a href="index-dark-modern.html#">How It Works</a></li>
                                 <li class="animation" data-animation="fadeInUp" data-animation-delay="0.4s"><a href="index-dark-modern.html#">Tokens</a></li>
                                 <li class="animation" data-animation="fadeInUp" data-animation-delay="0.5s"><a href="index-dark-modern.html#">FAQ</a></li>
