@@ -26,7 +26,7 @@ function Header(){
         <header class="site-header fixed-top">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="images/logo.svg" width={"150px"} /></a>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" width={"150px"} /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="fa fa-bars"></i>
                     </button>

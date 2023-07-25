@@ -16,7 +16,7 @@ function Footer(){
                         <div class="col-lg-4 col-md-12">
                             <div class="footer_logo mb-3 animation" data-animation="fadeInUp" data-animation-delay="0.2s"> 
                                 <a href="index-dark-modern.html#home_section" class="page-scroll">
-                                    <img src="images/logo.svg" width={"150px"} />
+                                    <img src="images/logo.png" width={"150px"} />
                                 </a> 
                             </div>
                             <div class="footer_desc">
